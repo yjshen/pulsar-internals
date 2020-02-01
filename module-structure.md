@@ -26,7 +26,7 @@
   Broker 是 Pulsar 的无状态服务组件，其主要功能是执行另外两个组件：
 
   - An HTTP server 向外暴露 REST API，提供 admin api 和 producer、consumer 需要的 topic lookup。
-  - A dispatcher ———— 一个异步的 TCP server，采用 pulsar 自定义的[二进制协议](https://pulsar.apache.org/docs/en/develop-binary-protocol/)，负责所有的数据传输。
+  - A dispatcher —— 一个异步的 TCP server，采用 pulsar 自定义的[二进制协议](https://pulsar.apache.org/docs/en/develop-binary-protocol/)，负责所有的数据传输。
 
 
 - pulsar-client， pulsar-client-admin， pulsar-client-tools
@@ -39,7 +39,7 @@
 
 - pulsar-proxy
 
-  Client 可以与 broker 直连，或者通过 proxy 做网关，在使用 proxy 情况下，所有客户端连接都会流经proxy。
+  Client 可以与 broker 直连，或者通过 proxy 做网关，在使用 proxy 情况下，所有客户端连接都会流经 proxy。
 
 - pulsar-discovery-service
 
